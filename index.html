@@ -135,7 +135,9 @@
         </section>
         <section class="profilenavigationmenu home-prof">
           <div class="profilenavigationmenudiv">
-            <a href="#" class="profilenavigationmenuitem">My Journey</a>
+            <a href="#journeysection" class="profilenavigationmenuitem"
+              >My Journey</a
+            >
           </div>
           <div class="profilenavigationmenudiv">
             <a href="#" class="profilenavigationmenuitem">Experience</a>
@@ -147,7 +149,7 @@
             <a href="#" class="profilenavigationmenuitem">Hobbies</a>
           </div>
         </section>
-        <section class="journeysection">
+        <section class="journeysection" id="journeysection">
           <div class="journeyheadingdiv home-div">
             <h1 class="journeyheading">
               Glimpse into the<br />chapters of my journey
@@ -505,6 +507,7 @@
                 </p>
               </div>
             </div>
+            <div class="experiencehorizontalline"></div>
           </div>
         </section>
         <section class="experiencesection volunteersection home-vol">
@@ -539,13 +542,14 @@
                 </p>
               </div>
             </div>
+            <div class="experiencehorizontalline"></div>
           </div>
         </section>
         <section class="skillssection home-skill">
           <div class="skillsheadingdiv">
             <h1 class="journeyheading experienceheading">Skills</h1>
           </div>
-          <div class="w-layout-grid grid">
+          <div class="w-layout-grid grid skillsGrid">
             <div class="skillsgridbox">
               <div class="skillsgridboxheading">Design Mastery:</div>
               <div class="skillsgridboxsubheading">
@@ -609,7 +613,7 @@
           <div class="skillsheadingdiv">
             <h1 class="journeyheading experienceheading">Hobbies</h1>
           </div>
-          <div class="w-layout-grid grid">
+          <div class="w-layout-grid grid hobbiesGrid">
             <div class="skillsgridbox hobbygridbox">
               <img
                 src="images/Chess.png"
@@ -718,15 +722,20 @@
             <div class="logotext">Abhinav Jain</div>
           </div>
           <div class="headermenu desktop">
-            <a href="#" class="menulink">Work</a>
+            <a href="#aftervideosection" class="menulink">Work</a>
             <a
               data-w-id="94fae446-66e6-4288-0892-ce8dae6d0519"
               href="#"
               class="menulink"
               >About Me</a
             >
-            <a href="#" class="menulink">Blog</a>
-            <a href="#" class="menulink">Resume</a>
+            <a href="#blogsection" class="menulink">Blog</a>
+            <a
+              href="https://drive.google.com/file/d/1EMwAXmb_89mxxz8ZuSTZMl9nGNQXbrxh/view?usp=sharing"
+              class="menulink"
+              target="_blank"
+              >Resume</a
+            >
           </div>
           <a
             href="#connect-with-me"
@@ -774,7 +783,7 @@
           </div>
           <div style="display: none; height: 0px" class="div-block-110">
             <div class="headermenu">
-              <a href="#" class="menulink">Work</a>
+              <a href="#aftervideosection" class="menulink">Work</a>
               <a
                 data-w-id="51de121a-0d82-6ed0-f33e-ce19c2356270"
                 href="#"
@@ -876,7 +885,11 @@
           </div>
         </div>
       </div>
-      <div class="aftervideosection">
+      <div
+        class="aftervideosection"
+        id="aftervideosection"
+        style="scroll-margin-top: 150px"
+      >
         <div class="projectsheadingdiv">
           <div class="projectsubheadingdiv">
             <div class="projectsubheading">crafted with care</div>
@@ -1892,7 +1905,7 @@
             <div class="lastsectiontextwrapper">
               <div class="lastsectiontext">DIGITAL DAIRY</div>
               <img
-                src="images/Digital-Diary.svg"
+                src="images/DigitalDiaryNew.svg"
                 loading="lazy"
                 alt="Digital Dairy Scroll"
                 class="lastsectionimage"
@@ -1905,13 +1918,14 @@
         data-w-id="cb2cbd24-bd97-ee35-a684-850a9cbde1f2"
         class="blogsection"
       >
+        >
         <div class="div-block-30">
           <div class="blogsectionheadingpart">
             <div class="text-block-3">my little nook of narratives 📖</div>
             <h3 class="blogsectionheading">My Digital Diary</h3>
           </div>
           <div class="reviewslider blogslider">
-            <div class="div-block-19">
+            <div class="div-block-19" id="blogsection">
               <div id="div1" class="reviewslidermask nflex">
                 <div class="div-block-20">
                   <div class="reviewsliderslide blogsectionslide">
