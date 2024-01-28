@@ -60,11 +60,15 @@
         /* cursor:pointer; */
       }
       .reviewslidermask.nflex:hover {
-        position: absolute;
-        animation: moveRight 100s linear infinite;
+        /* position: absolute;
+        animation: moveRight 100s linear infinite; */
+        animation-play-state: paused;
+        /* transition: smooth; */
       }
-      .reviewslidermask.nflex {
-      }
+
+      /* .reviewslidermask.nflex {
+      } */
+
       @keyframes moveRight {
         0% {
           transform: translateX(0px);
@@ -100,6 +104,7 @@
                 <a
                   data-w-id="95f930f3-fa43-04af-3ec4-fa78faa5c3b9"
                   href="profile.html"
+                  target="blank"
                   class="link-block-10 w-inline-block"
                 >
                   <div>View On Separate Page</div>
@@ -623,10 +628,10 @@
               />
               <div class="skillsgridboxheading hobbygridboxheading">Chess</div>
               <p class="paragraph-7">
-                The strategic dance of chess has always captivated me. If
-                you&#x27;re a fellow enthusiast, challenge accepted! Let&#x27;s
-                set up a board and have a match. DM me on linkedin or Instagram
-                for a chess match.
+                The game of chess has always captivated me. If you&#x27;re a
+                fellow enthusiast, challenge accepted! Let&#x27;s set up a board
+                and have a match. DM me on linkedin or Instagram for a chess
+                match.
               </p>
             </div>
             <div class="skillsgridbox hobbygridbox">
@@ -669,7 +674,7 @@
                 class="image-4"
               />
               <div class="skillsgridboxheading hobbygridboxheading">
-                Comedy &amp; Making People Laugh
+                Hahaha and Hihihihi
               </div>
               <p class="paragraph-7">
                 Laughter is the best medicine, and I enjoy crafting jokes. Got a
@@ -686,7 +691,11 @@
               in itself, is a beautiful design.</span
             >”
           </p>
-          <a href="#" class="link-block-11 w-inline-block">
+          <a
+            href="https://www.linkedin.com/in/abhinavjain-/"
+            target="blank"
+            class="link-block-11 w-inline-block"
+          >
             <div>Message me on Linkedin</div>
             <img
               src="images/image-20.svg"
@@ -812,7 +821,7 @@
             <div class="div-block-112">
               <a
                 data-w-id="e1ca028b-ebf1-2be6-693f-4204fb361c44"
-                href="#"
+                href="#connect-with-me"
                 class="headerbutton desktop-new w-inline-block"
               >
                 <div>Connect With Me</div>
@@ -894,7 +903,7 @@
           <div class="projectsubheadingdiv">
             <div class="projectsubheading">crafted with care</div>
             <img
-              src="images/≡ƒô╜∩╕Å.svg"
+              src="images/craftedwithcare.svg"
               loading="lazy"
               alt=""
               class="image-18"
@@ -905,7 +914,7 @@
         <a
           id="urban-case-study"
           data-w-id="a72dbadf-eaaa-fade-3a32-81856c6db838"
-          href="#"
+          href="case-study.html"
           class="project1_uc w-inline-block"
         >
           <div class="project1_uc_leftside">
@@ -913,9 +922,9 @@
               Designing the Loan Recovery System for Urban Culture
             </h3>
             <p class="paragraph-2">
-              Navigating the crossroads of financial challenges and empowerment,
-              Crafted a system for UC&#x27;s beauty professionals. Dive into a
-              design journey of creating pathways of hope and resilience.
+              Read how I redefined Urban Culture’s loan management, enhancing
+              clarity and building trust, with a system designed to support the
+              dreams and ambitions of beauty professionals.
             </p>
             <div class="project1_uc_leftside_button">
               <div class="menulink-copyf project1_uc_leftside_button">
@@ -943,20 +952,24 @@
             />
           </div>
         </a>
-        <a href="#" class="project1_uc project3_gs w-inline-block">
+        <a
+          href="https://www.behance.net/gallery/184364003/A-Design-Journey-with-Growspace-Onboarding-Redesign"
+          class="project1_uc project3_gs w-inline-block"
+          target="_blank"
+        >
           <div class="project1_uc_leftside">
             <h3 class="project1_uc_leftside_heading">
-              Navigating the Crypto Frontier: Crafting an Intuitive Onboarding
-              Experience for Growspace
+              A Design Story of turning Feedback into Onboarding Magic: Crafting
+              an intuitive experience for Growspace
             </h3>
             <p class="paragraph-2">
-              Revolutionizing User Onboarding in the Crypto Space: A Journey
-              from Complexity to Simplicity for Growspace Users, One Screen at a
-              Time.
+              Look how genuine user conversations lead to a 40% leap in user
+              engagement and an onboarding experience where clarity meets warmth
+              and trust.
             </p>
             <div class="project1_uc_leftside_button">
               <div class="menulink-copyec project1_uc_leftside_button">
-                View Project
+                View on Behance
               </div>
               <img
                 src="images/Arrow-circle-down.svg"
@@ -1015,7 +1028,7 @@
           <div class="reviewsubheading">
             <div class="reviewsubheadingtext">it’s all about them</div>
             <img
-              src="images/≡ƒæ¼.svg"
+              src="images/people.svg"
               loading="lazy"
               alt=""
               class="reviewsubheadingemoji"
@@ -1180,6 +1193,22 @@
               "
               class="reviewslidermask nflex"
             >
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  var slider = document.querySelector(
+                    ".reviewslidermask.nflex"
+                  );
+
+                  slider.addEventListener("mouseover", function () {
+                    this.style.animationPlayState = "paused";
+                  });
+
+                  slider.addEventListener("mouseout", function () {
+                    this.style.animationPlayState = "running";
+                  });
+                });
+              </script>
+
               <div class="div-block-20">
                 <div class="reviewsliderslide">
                   <h1 class="reviewsliderslideheading">
@@ -1731,7 +1760,7 @@
               got more hats than a hat store!
             </div>
             <img
-              src="images/≡ƒÄ⌐.svg"
+              src="images/hat.svg"
               loading="lazy"
               alt=""
               class="reviewsubheadingemoji"
@@ -1768,13 +1797,37 @@
             </div>
             <div class="div-block-117">
               <div class="div-block-118">
+                <h3 class="rolesgridtextpartheading">Freelance Projects</h3>
+                <p class="paragraph-10">
+                  Every now and then, I love to take on freelance projects that
+                  challenge my creativity and allow me to explore new design
+                  horizons.
+                </p>
+                <a href="#" class="button-2 w-button">Let's Chat</a>
+              </div>
+              <div class="div-block-119">
+                <img
+                  src="images/AbhinavFreelance.png"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 79vw, (max-width: 991px) 466.546875px, (max-width: 1279px) 42vw, 509.7421875px"
+                  srcset="
+                    images/AbhinavFreelance-p-500.png 500w,
+                    images/AbhinavFreelance.png       544w
+                  "
+                  alt=""
+                  class="rolesgridimagepartimage ex"
+                />
+              </div>
+            </div>
+            <div class="div-block-117">
+              <div class="div-block-118">
                 <h3 class="rolesgridtextpartheading">Design Talks</h3>
                 <p class="paragraph-10">
                   From the intricacies of UX design to the nuances of human
                   psychology, I love sharing my knowledge and insights with
                   others
                 </p>
-                <a href="#" class="button-2 w-button">Let&#x27;s Chat</a>
+                <a href="#" class="button-2 w-button">Enquire</a>
               </div>
               <div class="div-block-119">
                 <img
@@ -1798,7 +1851,7 @@
                   industry. Now, I aim to give back by mentoring and guiding
                   aspiring designers.
                 </p>
-                <a href="#" class="button-2 w-button">Enquire</a>
+                <a href="#" class="button-2 w-button">Book Now</a>
               </div>
               <div class="div-block-119">
                 <img
@@ -1811,30 +1864,6 @@
                   "
                   alt=""
                   class="rolesgridimagepartimage"
-                />
-              </div>
-            </div>
-            <div class="div-block-117">
-              <div class="div-block-118">
-                <h3 class="rolesgridtextpartheading">Freelance Projects</h3>
-                <p class="paragraph-10">
-                  Every now and then, I love to take on freelance projects that
-                  challenge my creativity and allow me to explore new design
-                  horizons.
-                </p>
-                <a href="#" class="button-2 w-button">Book Now</a>
-              </div>
-              <div class="div-block-119">
-                <img
-                  src="images/AbhinavFreelance.png"
-                  loading="lazy"
-                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 79vw, (max-width: 991px) 466.546875px, (max-width: 1279px) 42vw, 509.7421875px"
-                  srcset="
-                    images/AbhinavFreelance-p-500.png 500w,
-                    images/AbhinavFreelance.png       544w
-                  "
-                  alt=""
-                  class="rolesgridimagepartimage ex"
                 />
               </div>
             </div>
@@ -1928,23 +1957,29 @@
             <div class="div-block-19" id="blogsection">
               <div id="div1" class="reviewslidermask nflex">
                 <div class="div-block-20">
-                  <div class="reviewsliderslide blogsectionslide">
-                    <img
-                      src="images/UC_minimalist_perfection_creating_mystery_9152c85b-9c45-414a-a7ec-b04eb9db1d28-1.svg"
-                      loading="lazy"
-                      width="276"
-                      alt=""
-                      class="blogsliderimage"
-                    />
-                    <h1 class="reviewsliderslideheading blogsliderslideheading">
-                      Why Ugly Designs Sometimes Win?
-                    </h1>
-                    <p class="reviewsliderslidepara blogsectionpara">
-                      A Study in Aesthetics vs. Functionality; sometimes, the
-                      most unconventional choices lead to the most unforgettable
-                      experiences.
-                    </p>
-                  </div>
+                  <a
+                    href="https://medium.com/design-bootcamp/why-ugly-designs-sometimes-win-241cdc7ef21b"
+                    target="blank"
+                    ><div class="reviewsliderslide blogsectionslide">
+                      <img
+                        src="images/UC_minimalist_perfection_creating_mystery_9152c85b-9c45-414a-a7ec-b04eb9db1d28-1.svg"
+                        loading="lazy"
+                        width="276"
+                        alt=""
+                        class="blogsliderimage"
+                      />
+                      <h1
+                        class="reviewsliderslideheading blogsliderslideheading"
+                      >
+                        Why Ugly Designs Sometimes Win?
+                      </h1>
+                      <p class="reviewsliderslidepara blogsectionpara">
+                        A Study in Aesthetics vs. Functionality; sometimes, the
+                        most unconventional choices lead to the most
+                        unforgettable experiences.
+                      </p>
+                    </div></a
+                  >
                   <div class="reviewsliderslide blogsectionslide">
                     <img
                       src="images/UC_minimalist_premium_image_f8898c1b-5e83-4ed8-871c-05dd94616a45-1.svg"
@@ -2418,7 +2453,7 @@
           <div class="blogsectionviewall">
             <a
               data-w-id="176b023f-6d95-2913-7777-7a440316312a"
-              href="profile.html"
+              href="https://medium.com/@abhinavjain-"
               target="_blank"
               class="blogsectionviewalllink w-inline-block"
             >
@@ -2641,7 +2676,8 @@
               <div class="w-layout-grid sociallinksgrid">
                 <a
                   data-w-id="c0489cd5-15c0-257e-833f-ca5e815e4f6a"
-                  href="#"
+                  href="https://www.linkedin.com/in/abhinavjain-/"
+                  target="blank"
                   class="contactsociallinklinkedinside w-inline-block"
                 >
                   <div class="div-block-124">
@@ -2681,7 +2717,8 @@
                 >
                   <a
                     data-w-id="5809ea78-0690-3536-8475-8bb241746bb1"
-                    href="#"
+                    href="https://www.behance.net/abhinavjain22"
+                    target="blank"
                     class="link-block-8 w-inline-block"
                   >
                     <div class="div-block-113">
@@ -2703,7 +2740,8 @@
                   </a>
                   <a
                     data-w-id="e52fd9d4-9045-c899-0c11-17be25cca160"
-                    href="#"
+                    href="https://medium.com/@abhinavjain-"
+                    target="blank"
                     class="link-block-5 w-inline-block"
                   >
                     <div class="div-block-113">
@@ -2771,7 +2809,8 @@
                 >
                   <a
                     data-w-id="c8a69d91-5ca9-987e-2c22-7b3a24888b42"
-                    href="#"
+                    href="https://www.instagram.com/abhinav.jain_25?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="blank"
                     class="link-block-9 w-inline-block"
                   >
                     <div class="div-block-113">
@@ -2791,7 +2830,11 @@
                       <div class="text-block-38">Instagram</div>
                     </div>
                   </a>
-                  <a href="#" class="link-block-6 w-inline-block">
+                  <a
+                    href="https://drive.google.com/file/d/1EMwAXmb_89mxxz8ZuSTZMl9nGNQXbrxh/view"
+                    target="blank"
+                    class="link-block-6 w-inline-block"
+                  >
                     <div class="div-block-113">
                       <img
                         src="images/Frame-53-8.svg"
@@ -2804,12 +2847,14 @@
                   </a>
                 </div>
                 <a
-                  href="#"
+                  href="https://medium.com/@abhinavjain-"
+                  target="blank"
                   class="contactsociallinksbehanceside mobile w-inline-block"
                   ><img src="images/Medium.svg" loading="lazy" alt=""
                 /></a>
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/1EMwAXmb_89mxxz8ZuSTZMl9nGNQXbrxh/view"
+                  target="blank"
                   class="contactsociallinksbehanceside mobile w-inline-block"
                   ><img src="images/Resume.svg" loading="lazy" alt=""
                 /></a>
