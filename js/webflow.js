@@ -14681,7 +14681,7 @@ Webflow.require("ix2").init({
                   selectorGuids: ["7a124d03-3cef-ef03-0d20-d2b4c5a8a340"],
                 },
                 widthValue: 100,
-                heightValue: 220,
+                heightValue: 270,
                 widthUnit: "%",
                 heightUnit: "px",
                 locked: false,
