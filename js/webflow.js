@@ -14909,6 +14909,24 @@ Webflow.require("ix2").init({
                     aValue: 1,
                   },
                 },
+                {
+                  id: "a-22-n-20",
+                  actionTypeId: "STYLE_TEXT_COLOR",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      selector: ".image-17",
+                      selectorGuids: ["500d6020-7871-8e04-2df2-a67783ee99ca"],
+                    },
+                    globalSwatchId: "",
+                    rValue: 22,
+                    bValue: 31,
+                    gValue: 27,
+                    aValue: 1,
+                  },
+                },
               ],
             },
             {
@@ -14951,24 +14969,24 @@ Webflow.require("ix2").init({
                     aValue: 0.05,
                   },
                 },
-                {
-                  id: "a-22-n-8",
-                  actionTypeId: "STYLE_TEXT_COLOR",
-                  config: {
-                    delay: 0,
-                    easing: "easeIn",
-                    duration: 500,
-                    target: {
-                      selector: ".menulink",
-                      selectorGuids: ["350261a6-bd5a-87d4-147a-469195f92157"],
-                    },
-                    globalSwatchId: "",
-                    rValue: 255,
-                    bValue: 255,
-                    gValue: 255,
-                    aValue: 1,
-                  },
-                },
+                // {
+                //   id: "a-22-n-8",
+                //   actionTypeId: "STYLE_TEXT_COLOR",
+                //   config: {
+                //     delay: 0,
+                //     easing: "easeIn",
+                //     duration: 500,
+                //     target: {
+                //       selector: ".menulink",
+                //       selectorGuids: ["350261a6-bd5a-87d4-147a-469195f92157"],
+                //     },
+                //     globalSwatchId: "",
+                //     rValue: 255,
+                //     bValue: 255,
+                //     gValue: 255,
+                //     aValue: 1,
+                //   },
+                // },
                 {
                   id: "a-22-n-10",
                   actionTypeId: "STYLE_TEXT_COLOR",
@@ -15059,6 +15077,25 @@ Webflow.require("ix2").init({
                     duration: 500,
                     target: {
                       selector: ".logotext",
+                      selectorGuids: ["500d6020-7871-8e04-2df2-a67783ee99ca"],
+                    },
+                    globalSwatchId: "",
+                    rValue: 255,
+                    bValue: 255,
+                    gValue: 255,
+                    aValue: 1,
+                  },
+                },
+
+                {
+                  id: "a-22-n-21",
+                  actionTypeId: "STYLE_TEXT_COLOR",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      selector: ".image-17",
                       selectorGuids: ["500d6020-7871-8e04-2df2-a67783ee99ca"],
                     },
                     globalSwatchId: "",
